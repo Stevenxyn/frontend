@@ -20,6 +20,7 @@
 
     <hr>
 
+    <h3>Formato de texto</h3>
     <p style="background-color: aqua;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo facere quam esse
         officia accusantium consequuntur vero laudantium eveniet fugiat, ad aspernatur error atque cumque obcaecati
         placeat facilis alias a similique.</p>
@@ -38,7 +39,6 @@
 
     <hr>
     <h2>Listas</h2>
-
     <h4>Listas ordenadas</h4>
     <ol>
         <li>Cigarettes after sex</li>
@@ -60,7 +60,7 @@
     <h3>Formato de imagenes</h3>
     <p>Para ver mas atributos de imagenes <a href="https://lenguajehtml.com/html/multimedia/etiquetas-html-de-imagenes/"
             target="_blank">dar clic aqui</a> Esta es la imagen llamada de forma <b>local: </b></p>
-    <img src="/img/bmw-m2.jpg" alt="BMW M2" width="350px" title="Auto BMW M2">
+    <img src="/src/img/bmw-m2.jpg" alt="BMW M2" width="350px" title="Auto BMW M2">
     <p>Esta imagen llamada de forma <b>externa: </b></p>
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRACyq7pFigzS6jatt2yeFJlA-BEd9YEx6i1I1g8tT0nG76hhrydgxXjkeDMlb9jY1Xlic&usqp=CAU"
         alt="Imagen extraida Externa del BMWM2">
@@ -69,16 +69,130 @@
     <p>Con el atributo <b>controls</b> le podemos poner controles automaticamente al video y asi poder mas opciones de
         manejo para el mismo para mas info de atributos de video <a
             href="https://lenguajehtml.com/html/multimedia/etiquetas-html-de-video/" target="_blank">ver aqui</a></p>
-    <video src="/videos/bmw_m2.mp4" controls width="550px"></video>
+    <video src="/src/videos/bmw_m2.mp4" controls width="550px"></video>
 
     <h3>Formato de audio</h3>
     <p>Ponemos audios de forma <b>local </b> y para mas atributos <a
             href="https://lenguajehtml.com/html/multimedia/etiquetas-html-de-audio/" target="_blank"> dar clic aqui.</a>
     </p>
-    <audio src="/src/audios/CAS_cry.mp3" controls autoplay></audio>
+    <audio src="/src/audios/CAS_cry.mp3" controls></audio>
+
+    <hr>
+    <h3>divs</h3>
+    <p>etiqueta semantica para separa y agrupar contenidos</p>
+
+    <h2 style="background-color: aqua;">Ejemplo fuera de un div</h2>
+
+    <div>
+        <h2>Tienda "Dentro de un div"</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto modi, cupiditate provident, a ab
+            laudantium culpa quos similique officiis harum est molestiae. Perferendis nostrum adipisci accusamus! Sit
+            soluta necessitatibus possimus.
+        </p>
+    </div>
+    <div>
+        <h2>Tienda2 "Dentro de un div"</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto modi, cupiditate provident, a ab
+            laudantium culpa quos similique officiis harum est molestiae. Perferendis nostrum adipisci accusamus! Sit
+            soluta necessitatibus possimus.
+        </p>
+    </div>
+    <div>
+        <h2>Tienda3 "Dentro de un div"</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto modi, cupiditate provident, a ab
+            laudantium culpa quos similique officiis harum est molestiae. Perferendis nostrum adipisci accusamus! Sit
+            soluta necessitatibus possimus.
+        </p>
+    </div>
+
+    <hr>
+
+    <h3>Formularios</h3>
+
+    <ul>
+        <li><b>Input: </b>Entrada de datos</li>
+        <li><b>Procesamiento: </b>Procesamiento de lo que se haya recibido del input </li>
+        <li><b>Salida de datos o output: </b>Respuesta del procesamiento</li>
+    </ul>
+
+    <h2>
+        <a href="https://lenguajehtml.com/html/formularios/crear-un-formulario/" target="_blank">Para saber mas de los Formularios ver aqui!</a>
+    </h2>
+    <p>
+        <b>required</b> es requerido para que se envien los formularios se pone como atributo a los inputs que queremos
+        obligatorios
+    </p>
+    <p>
+        <b>placeholder</b> Para colocar un texto por defecto en los inputs que se quite apenas vayamos a escribir
+    </p>
+
+    <!--Formulario-->
+    <form>
+        <ul>
+            <li>
+                <label>Texto</label>
+                <input type="text" required placeholder="Tu nombre aqui!">
+            </li>
+            <li>
+                <label>Contraseña</label>
+                <input type="password">
+            </li>
+            <li>
+                <label>Numero</label>
+                <input type="number" placeholder="Tu telefono aqui">
+            </li>
+            <li>
+                <label>Email</label>
+                <input type="email">
+            </li>
+            <li>
+                <label>Rango</label>
+                <input type="range" min="5" max="50">
+            </li>
+            <li>
+                <label>Colores</label>
+                <input type="color">
+            </li>
+            <li>
+                <label>Hora</label>
+                <input type="time">
+            </li>
+            <li>
+                <label>Fecha</label>
+                <input type="date">
+            </li>
+            <li>
+                <label>Boton</label>
+                <input type="button" value="Este es un boton">
+            </li>
+            <li>
+                <label>Tu comentario aqui</label>
+                <textarea  cols="50" rows="10" placeholder="Dejanos tu comentario aqui!" readonly>Si le ponemos atributo readonly solamente se podra leer no modificar</textarea>
+            </li>
+            <li>
+                <label>Boton de enviar</label>
+                <input type="submit">
+            </li>
 
 
 
+        </ul>
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>s
 </body>
 
 </html>
