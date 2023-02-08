@@ -1,0 +1,50 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    color: indigo;
+}
+
+section{
+    padding-bottom: 50px;
+}
+
+/*Selector por clases*/
+.botonRamdon {
+    background-color: brown;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+/*Selector por id*/
+#soyUnico {
+    background-color: aqua;
+    color: blue;
+    border-color: red;
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+/*Por atributo desde html*/
+[ejemploPorAtributo="sisi"] {
+    color: brown;
+    background-color: aqua;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/*Por forma descendiente*/
+h2 span {
+    color: black;
+    background-color: red;
+}
+
+/*Por pseudo clases*/
+
+.botonHover:hover {
+    background-color: blueviolet;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 10px;
+}
