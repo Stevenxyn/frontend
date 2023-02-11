@@ -10,6 +10,9 @@ h1 {
   color: indigo;
 }
 
+
+/********************************SELECTORES BÁSICOS***********************************/
+
 /*Selector por clases*/
 .botonRamdon {
   background-color: brown;
@@ -53,6 +56,7 @@ pre {
   color: white;
 }
 
+
 /********************************SELECTORES AVANZADOS ***********************************/
 
 /*Lo aplican al primer elemento despues de haber asignado la clase el hijo directo se le dice*/
@@ -88,3 +92,41 @@ pre {
   text-decoration: none;
   font-size: 24px;
 }
+
+
+/********************************PSEUDOCLASES***********************************/
+
+/*Algunas pseudoclases de formularios*/
+
+/*Para los elementos que tenga un focus del usuario ponga el estilo*/
+.form-pseudoclases *:focus{
+  background-color:skyblue;
+}
+
+/*Para los ementos que ya tengan valores validos ponga el estilo*/
+.form-pseudoclases *:valid{
+  border-color: greenyellow;
+}
+
+/*Para los ementos que ya tengan valores invalidos ponga el estilo*/
+.form-pseudoclases *:invalid{
+  border-color: red;
+}
+
+/*Cuando se pase por encima con el mouse*/
+.menu-pseudoclases a:hover{
+  color:tomato;
+  font-size: 20px;
+}
+
+.menu-pseudoclases a:visited{
+  color:greenyellow;
+}
+
+/*Cuando al oprimir un enlace el target es el que se pone en el url este indica que estamos posicionados en dicha parte*/
+#head-css:target{
+  background-color: slateblue;
+  color: white;
+  font-weight:bold;
+}
+  
