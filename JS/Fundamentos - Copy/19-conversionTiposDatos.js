@@ -46,15 +46,15 @@ console.log(dateConvertido);
 //Convertir Booleanos a Numeros
 
 let primer = false;
-     segundo = true;
+segundo = true;
 
-     console.log(primer);
-     console.log(segundo);
+console.log(primer);
+console.log(segundo);
 
-     //al convertir a numeros true vale 1 y false 0
-     console.log(Number(primer));
-     console.log(Number(segundo));
-     
+//al convertir a numeros true vale 1 y false 0
+console.log(Number(primer));
+console.log(Number(segundo));
+
 
 
 
