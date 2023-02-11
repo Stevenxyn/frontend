@@ -1,50 +1,90 @@
 * {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 h1 {
-    color: indigo;
-}
-
-section{
-    padding-bottom: 50px;
+  color: indigo;
 }
 
 /*Selector por clases*/
 .botonRamdon {
-    background-color: brown;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 900;
+  background-color: brown;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 900;
 }
 
 /*Selector por id*/
 #soyUnico {
-    background-color: aqua;
-    color: blue;
-    border-color: red;
-    font-size: 1rem;
-    font-weight: 900;
+  background-color: aqua;
+  color: blue;
+  border-color: red;
+  font-size: 1rem;
+  font-weight: 900;
 }
 
 /*Por atributo desde html*/
 [ejemploPorAtributo="sisi"] {
-    color: brown;
-    background-color: aqua;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: brown;
+  background-color: aqua;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 /*Por forma descendiente*/
 h2 span {
-    color: black;
-    background-color: red;
+  color: black;
+  background-color: red;
 }
 
 /*Por pseudo clases*/
-
 .botonHover:hover {
-    background-color: blueviolet;
-    color: #fff;
-    font-size: 20px;
-    border-radius: 10px;
+  background-color: blueviolet;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+pre {
+  background-color: black;
+  color: white;
+}
+
+/********************************SELECTORES AVANZADOS ***********************************/
+
+/*Lo aplican al primer elemento despues de haber asignado la clase el hijo directo se le dice*/
+.hijos-directos > li {
+  background-color: aqua;
+}
+
+/*Lo aplica a los que esten despues de los hijos directos cualquiera solo hay que especificar*/
+.hijos-descendientes b {
+  background-color: aqua;
+}
+
+/*Aplica estilos a todos los hermanos siguientes despues de haberse asignado*/
+.hermanos-generales ~ li {
+  background-color: aqua;
+}
+
+/*Aplica el estilo al siguiente elemento si es hermano de donde se declaro la clase de resto no*/
+.hermanos-adyacentes + li {
+  background-color: aqua;
+}
+
+/*Aplica los estilos unicamente a los que tengan ese atributo en especial*/
+.selectores-atributos a[href]{
+  color: blueviolet;
+}
+
+.selectores-atributos a[target="_blank"]{
+  font-weight: bold;
+}
+
+.selectores-atributos a[href*="whatsapp"]{
+  text-decoration: none;
+  font-size: 24px;
 }

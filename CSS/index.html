@@ -2,167 +2,233 @@
 <html>
 
 <head>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <!--attach CSS -->
-    <link rel="stylesheet" href="style.css" />
-    <!--favicon-->
-    <link rel="shortcut icon" href="/src/img/faviconCSS.png" type="image/x-icon">
-    <title>Aprendiendo CSS</title>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <!--attach CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <!--favicon-->
+  <link rel="shortcut icon" href="/src/img/faviconCSS.png" type="image/x-icon" />
+  <title>Aprendiendo CSS</title>
 </head>
 
 <body>
-    <main>
-        <h1>Aprendiendo CSS 🤠 </h1>
+  <header id="head-css">
+    <h1>Aprendiendo CSS 🤠</h1>
+    <nav>
+      <ul>
+        <li><a href="#selectores">Selectores básicos</a></li>
+        <li><a href="#selectores-avanzados">Selectores avanzados</a></li>
+        <li><a href="#pseudoclases">Pseudo-clases</a></li>
+        <li><a href="##"></a></li>
+        <li><a href="##"></a></li>
+      </ul>
+    </nav>
+  </header>
+  <hr>
+  <article id="selectores">
+    <h2>Selectores básicos</h2>
+    <p>
+      Hay varios tipos de selectores para CSS estos serian algunos la
+      estructura de CSS seria la siguiente
+    </p>
+    <pre>
+        selector {
+        propiedad:valor;
+        }
+      </pre>
+    <h3>Universal:</h3>
+    <p>Este afectara a todo lo que haya dentro del body</p>
+    <pre>
+        *{
+        color: blue;
+        }
+      </pre>
+    <h3>Por etiqueta o de tipo:</h3>
+    <p>
+      Esto afectara a los nombres de los elementos a todos los h1 porejemplo
+      o cualquier etiqueta que llamemos
+    </p>
+    <pre>
+        h1{
+        color: indigo;
+        }
 
-        <!--Navegation-->
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="#selectores">Selectores</a></li>
-                    <li><a href="#especificidad">Especificidad</a></li>
-                    <li><a href="##"></a></li>
-                    <li><a href="##"></a></li>
-                    <li><a href="##"></a></li>
-                </ul>
-            </nav>
-        </header>
+        bottom{
+        color: red;
+        }
+    </pre>
+    <h3>Por clases:</h3>
+    <p>
+      Esto afectara unicamente a las etiquetas que tengan la clase a la que
+      estemos llamando, la clase la asignamos directamente como unatributo y
+      con el nombre de dicha clase.
+    </p>
+    <pre>
+        .botonRamdon{
+        background-color: brown;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 900;
+        }
 
-        <article>
-            <section id="selectores">
-                <h2>Selectores</h2>
-                <p>Hay varios tipos de selectores para CSS estos serian algunos la estructura de CSS seria la siguiente
-                </p>
-                <pre>
-                    selector {
-                        propiedad:valor;
-                    }
-                </pre>
+        .titulos{
+        color:red;
+        }
+      </pre>
+    <button class="botonRamdon">Un boton ramdon</button>
 
-                <h3>Universal:</h3>
-                <p>Este afectara a todo lo que haya dentro del body</p>
-                <pre>
-                            *{
-                                color: blue;
-                            }
-                    </pre>
+    <h3>Por identificadores <b>#id</b>:</h3>
+    <p>
+      Esto a los elementos que tengan un <b>#id</b> que se asigna en las
+      etiquetas HTML como atributo. Tener en cuenta que debe existir un
+      <b>#id</b> unico ya que esa es la idea del <b>#id</b> ser unico,
+      pueden haber varios <b>#id</b> pero no se pueden asignar mas de una
+      vez a otras etiquetas, ya que esa es su tarea.
+    </p>
+    <pre>
+        #soyUnico{
+        color: indigo;
+        }
 
-                <h3>Por etiqueta o de tipo:</h3>
-                <p>Esto afectara a los nombres de los elementos a todos los h1 por ejemplo o cualquier etiqueta que
-                    llamemos</p>
-                <pre>
-                            h1{
-                                color: indigo;
-                             }
+        bottom{
+        color: red;
+        }
+    </pre>
+    <button id="soyUnico">Soy otro boton con <b>#id</b></button>
 
-                             bottom{
-                                color: red;
-                             }
-                    </pre>
+    <h3>Por atributo:</h3>
+    <p>
+      Esto lo asignamos como atributo poniendo cualquier nombre tal como en
+      el siguiente ejemplo y al llamarlo desde CSS lo ponemos dentro de [ ]
+    </p>
+    <pre>
+        [ejemploPorAtributo="sisi"]{
+        color: brown;
+        background-color: aqua;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+    </pre>
+    <p ejemploPorAtributo="sisi">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+      cupiditate incidunt ea eos quisquam molestiae consequuntur nobis harum
+      reiciendis recusandae. Tempore, fuga aperiam rem natus sed deserunt ea
+      officia eum?
+    </p>
 
-                <h3>Por clases:</h3>
-                <p>Esto afectara unicamente a las etiquetas que tengan la clase a la que estemos llamando, la clase la
-                    asignamos directamente como un atributo y con el nombre de dicha clase.</p>
-                <pre>
-                            .botonRamdon{
-                                background-color: brown;
-                                color: #fff;
-                                font-size: 1rem;
-                                font-weight: 900;
-                            }
+    <h3>Descendiente:</h3>
+    <p>
+      Esto afecta a las etiquetas que vayan de forma descendiente existentes
+      dentro de otra etiqueta como en el siguiente ejemplo:
+    </p>
+    <pre>
+        h2 span{
+        color: black;
+        background-color: red;
+        }
+        .claseX p {
+        color:red;
+        }
+    </pre>
+    <h2>
+      Hola en este texto solo afectare<span>Este elemento</span> unicamente
+      y funciona de igual forma con clases
+    </h2>
 
-                             .titulos{
-                                color:red;
-                             }
-                    </pre>
-                <button class="botonRamdon">Un boton ramdon</button>
+    <h3>por pseudo-clases:</h3>
+    <p>De esta manera aplicamos el estilo cuando ocurra o hagamos algo un
+      ejemplo es con hover:
+    </p>
+    <pre>
+        .botonHover:hover{
+        background-color: blueviolet;
+        color: #fff;
+        border: gray;
+        font-size: 20px;
+        border-radius: 10px;
+        }
+    </pre>
+    <button class="botonHover">
+      Cambiare de color cuando pases el mouse encima
+    </button>
+    <br><br>
+    <a href="#head-css">👆</a>
+  </article>
+  <hr>
+  <article id="selectores-avanzados">
+    <h2>Selectores Avanzados</h2>
+    <h3>Selectores de hijos</h3>
+    <h4>Selectores de hijos directos</h4>
+    <p>Lo aplican al primer elemento despues de haber asignado la clase el hijo directo se le dice</p>
+    <ul class="hijos-directos">
+      <li><b>Verano</b></li>
+      <li><b>Otoño</b></li>
+      <li><b>Primavera</b></li>
+      <li><b>Invierno</b></li>
+    </ul>
+    <h4>Selectores de hijos descendientes</h4>
+    <p>Lo aplica a los que esten despues de los hijos directos cualquiera solo hay que especificar</p>
+    <ul class="hijos-descendientes">
+      <li><b>Verano</b></li>
+      <li><b>Otoño</b></li>
+      <li><b>Primavera</b></li>
+      <li><b>Invierno</b></li>
+    </ul>
+    <h4>Selectores Hermanos generales</h4>
+    <p>Aplica estilos a todos los hermanos siguientes despues de haberse asignado</p>
+    <ul>
+      <li><b>Verano</b></li>
+      <li class="hermanos-generales"><b>Otoño</b></li>
+      <li><b>Primavera</b></li>
+      <li><b>Invierno</b></li>
+      <li><b>Primavera</b></li>
+      <li><b>Invierno</b></li>
+      <li><b>Primavera</b></li>
+      <li><b>Invierno</b></li>
+      <li><b>Primavera</b></li>
+      <li><b>Invierno</b></li>
+      <li><b>Primavera</b></li>
+      <li><b>Invierno</b></li>
+      <li><b>Primavera</b></li>
+      <li><b>Invierno</b></li>
+    </ul>
+    <h4>Selectores Hermanos adyacentes</h4>
+    <p>Aplica el estilo al siguiente elemento si es hermano de donde se declaro la clase de resto no</p>
+    <ul>
+      <li><b>Verano</b></li>
+      <li class="hermanos-adyacentes"><b>Otoño</b></li>
+      <li><b>Primavera</b></li>
+      <li><b>Invierno</b></li>
+      <li><b>Primavera</b></li>
+      <li><b>Invierno</b></li>
+      <li><b>Primavera</b></li>
+      <li><b>Invierno</b></li>
+      <li><b>Primavera</b></li>
+      <li><b>Invierno</b></li>
+    </ul>
+    <h4>Selectores por atributo</h4>
+    <ul>
+      <li><b>.selectores-atributos a[href] </b>: Aplica los estilos unicamente a los que tengan ese atributo en especial</li>
+      <li><b>.selectores-atributos a[target="_blank"] </b>: Le aplica el estilo a los que cumplan con ese parametro</li>
+      <li><b>.selectores-atributos a[href*="whatsapp"] </b>: Tambien se puede aplicar estilos a etiquetas que tengan ciertas palabras en este caso de <b>href</b></li>
+    </ul>
+    <nav class="selectores-atributos">
+      <li><a href="https://whatsapp.com/" target="_blank">whatsapp uno</a></li>
+      <li><a href="https://otrapagina.com/">whatsapp dos</a></li>
+      <li><a href="https://whatsapp.com/">whatsapp tres</a></li>
+      <li><a href="https://otrapagina.com/" target="_blank">whatsapp cuatro</a></li>
+    </nav>
+    <a href="#head-css">👆</a>
+  </article>
+  <hr>
+  <article id="pseudoclases">
 
-                <h3>Por identificadores <b>#id</b>:</h3>
-                <p>Esto a los elementos que tengan un <b>#id</b> que se asigna en las etiquetas HTML como atributo.
-                    Tener en cuenta que debe existir un <b>#id</b> unico ya que esa es la idea del <b>#id</b> ser unico,
-                    pueden haber varios <b>#id</b> pero no se pueden asignar mas de una vez a otras etiquetas, ya que
-                    esa es su tarea.</p>
-                <pre>
-                            #soyUnico{
-                                color: indigo;
-                             }
 
-                             bottom{
-                                color: red;
-                             }
-                    </pre>
-                <button id="soyUnico">Soy otro boton con <b>#id</b></button>
+    <a href="#head-css">👆</a>
+  </article>
+  <hr>
 
+  <a href="#head-css">👆</a>
 
-                <h3>Por atributo:</h3>
-                <p>Esto lo asignamos como atributo poniendo cualquier nombre tal como en el siguiente ejemplo y al
-                    llamarlo desde CSS lo ponemos dentro de [ ]</p>
-                <pre>
-                        [ejemploPorAtributo="sisi"]{
-                            color: brown;
-                            background-color: aqua;
-                            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-                        }
-                    </pre>
-                <p ejemploPorAtributo="sisi">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
-                    cupiditate incidunt ea eos quisquam molestiae consequuntur nobis harum reiciendis recusandae.
-                    Tempore, fuga aperiam rem natus sed deserunt ea officia eum?</p>
-
-                <h3>Descendiente:</h3>
-                <p>Esto afecta a las etiquetas que vayan de forma descendiente existentes dentro de otra etiqueta como
-                    en el siguiente ejemplo: </p>
-                <pre>
-                            h2 span{
-                                color: black;
-                                background-color: red;
-                            }
-                            .claseX p {
-                                color:red;
-                            }
-                    </pre>
-                <h2>Hola en este texto solo afectare <span>Este elemento</span> unicamente y funciona de igual forma con
-                    clases</h2>
-
-                <h3>por pseudo-clases:</h3>
-                <p>De esta manera aplicamos el estilo cuando ocurra o hagamos algo un ejemplo es con hover: </p>
-                <pre>
-                            .botonHover:hover{
-                                background-color: blueviolet;
-                                color: #fff;
-                                border: gray;
-                                font-size: 20px;
-                                border-radius: 10px;
-                            }
-                          
-                    </pre>
-                <button class="botonHover">Cambiare de color cuando pases el mouse encima</button>
-            </section>
-
-  
-            <section id="especificidad">
-                <h2>La Especificidad</h2>
-
-
-
-
-                
-            </section>
-        </article>
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    </main>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
-
 </html>
