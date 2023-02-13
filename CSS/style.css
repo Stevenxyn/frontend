@@ -94,7 +94,7 @@ pre {
 }
 
 
-/********************************PSEUDOCLASES***********************************/
+/********************************PSEUDO-CLASES***********************************/
 
 /*Algunas pseudoclases de formularios*/
 
@@ -184,5 +184,49 @@ pre {
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: rgb(0, 26, 255);
 }
+
+
+/********************************PSEUDO-ELEMENTOS***********************************/
+
+/*Aplica estilos antes de no olvidar poner los textos dentro de comillas*/
+.figura::before{
+  content: "🅰️";
+}
+
+/*Aplica estilos despues de*/
+.figura::after{
+  content: "🅰️";
+}
+
+.precio-figura::before{
+  content: "$";
+  font-weight: bold;
+}
+
+.precio-figura::after{
+  content: " Pesos";
+  font-weight: bold;
+}
+
+/*Aplicarle estilos a la primera letra de en este ejemplo la p*/
+.p-pseudoelemento::first-letter{
+  font-weight: bold;
+  font-family: cursive;
+  font-size: 32px;
+}
+
+/*Para cambiar los estilos al momento de seleccionar texto*/
+.p-pseudoelemento::selection{
+  background-color: rebeccapurple;
+  color: white;
+}
+
+/*Aplicar estilo al texto del placeholder*/
+.input-pseudoelemento::placeholder{
+  color: cornflowerblue;
+}
+
+
+
 
 
