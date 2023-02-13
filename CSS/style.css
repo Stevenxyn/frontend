@@ -129,4 +129,60 @@ pre {
   color: white;
   font-weight:bold;
 }
-  
+
+
+/*Cambia el color al primer elmento del li*/
+.lista-pseudoclases li:first-child{
+  color: cadetblue;
+}
+
+/*Cambia el color del ultimo elemento del li*/
+.lista-pseudoclases li:last-child{
+  color: red;
+}
+
+/*Cambia el color el color a la posicion que queramos*/
+.lista-pseudoclases li:nth-child(3){
+  color: blue;
+}
+
+/*Que aplique los estilos cada cierto elementos en este caso de 4 en 4*/
+.lista-pseudoclases li:nth-child(4n){
+  font-size: 24px ;
+}
+
+
+/*Aplicar estilos a elementos pares*/
+.lista-pseudoclases li:nth-child(even){
+  background-color: yellow;
+}
+
+/*Aplicar estilos a elementos impares*/
+.lista-pseudoclases li:nth-child(odd){
+  background-color: red;
+}
+
+/*Aplica estilos a los elementos (etiquetas) que asignemos*/
+.articulo-pseudoclases p:first-of-type{
+  background-color: yellow;
+}
+
+/*Aplica el estilo al ultimo elemento de tipo p dentro de esa clase*/
+.articulo-pseudoclases p:last-of-type{
+  background-color: red;
+  font-weight: bold;
+}
+
+/*Todas las pseudoclases que ocupamos anteriormente sirven para esto*/
+.articulo-pseudoclases div:nth-of-type(3){
+  background-color: chartreuse;
+  color: black;
+}
+
+/*Que dentro de la clase a todos los elementos le apliquen los estilos menos a los que le indiquemos*/
+.articulo-pseudoclases *:not(p){
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgb(0, 26, 255);
+}
+
+
