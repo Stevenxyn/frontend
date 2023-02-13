@@ -226,6 +226,24 @@ pre {
   color: cornflowerblue;
 }
 
+/********************************AGRUPAR SELECTORES***********************************/
+
+/*Agrupar elementos y aplicarle el mismo estilo a varios*/
+
+.form-agrupar-selectores input[type="text"],
+.form-agrupar-selectores input[type="email"],
+.form-agrupar-selectores textarea{
+  background-color: black;
+  color: yellow;
+  border-width: 1px;
+  display: block;
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+.form-agrupar-selectores input[type="submit"]{
+  width: 305px;
+}
 
 
 
