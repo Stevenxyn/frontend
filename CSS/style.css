@@ -131,6 +131,7 @@ pre {
 }
 
 
+
 /*Cambia el color al primer elmento del li*/
 .lista-pseudoclases li:first-child{
   color: cadetblue;

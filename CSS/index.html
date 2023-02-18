@@ -21,6 +21,8 @@
         <li><a href="index.html#pseudoclases">Pseudo-clases</a></li>
         <li><a href="index.html#pseudoelementos">Pseudo-Elementos</a></li>
         <li><a href="index.html#agrupar-selectores">Agrupar Selectores</a></li>
+        <li><a href="index.html#algoritmo-css">El Algoritmo de CSS</a></li>
+        <li><a href="#"></a></li>
       </ul>
     </nav>
   </header>
@@ -278,7 +280,8 @@
       Figura de <span class="figura">Asuna Yuuki</span> tiene un precio de <span class="precio-figura">120.000</span>
     </p>
     <p class="p-pseudoelemento">
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore recusandae delectus facilis modi nam totam ea. Illo earum dolorum reprehenderit, optio maxime eaque enim nam doloribus incidunt, soluta quisquam animi.
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore recusandae delectus facilis modi nam totam ea.
+      Illo earum dolorum reprehenderit, optio maxime eaque enim nam doloribus incidunt, soluta quisquam animi.
     </p>
     <br>
     <input class="input-pseudoelemento" type="text" placeholder="Ingresa tu nombre guapura">
@@ -290,11 +293,48 @@
     <form class="form-agrupar-selectores">
       <input type="text" name="nombre-banda" placeholder="Escribe tu banda favorita">
       <input type="email" name="email-persona" placeholder="Escribe tu correo">
-      <textarea name="comentarios"cols="30" rows="10" placeholder="Dejanos tu cancion favorita de la banda"></textarea>
+      <textarea name="comentarios" cols="30" rows="10" placeholder="Dejanos tu cancion favorita de la banda"></textarea>
       <input type="submit">
     </form>
 
     <a href="#head-css">👆</a>
+  </article>
+  <hr>
+  <article id="algoritmo-css">
+    <h2>El Algoritmo de CSS</h2>
+    <P><b>El algoritmo de CSS</b> es la forma en que el navegador aplica los estilos al documento HTML. Es vital
+      entender este concepto para que entiendas como se aplican y en algunas ocasiones se sobreescriben las reglas CSS
+    </P>
+    <ul>
+      <li>La Cascada</li>
+      <li>La Especificidad</li>
+      <li>La Herencia</li>
+    </ul>
+    <h3>La Cascada</h3>
+    <p>Es el mecanismo en el que el navegador aplica los estilos. Y toma en cuenta el siguiente orden:</p>
+    <ul>
+      <li><b>Origen del codigo: </b>
+        <p>El user Agent (Los estilos por defecto del navegador)</p>
+        <p>Personalizacions del usuario (Tema oscuro del SO mi tema es oscuro)</p>
+        <p>Los estilos del autos (Los que uno cree con CSS)</p>
+      </li>
+      <li><b>La especificidad del selector</b></li>
+      <li><b>Orden de aparicion</b></li>
+    </ul>
+    <h3>La Especificidad</h3>
+    <p>La Especificidad es el peso que tiene un selector cuando hay conflicto de estilos. Se calcula de la siguiente
+      forma:</p>
+    <ul>
+      <li><a href="index.html#selectores">Etiquetas</a> y
+        <a href="index.html#pseudoelementos">pseudoelementos</a>..............0,0,0,1
+      </li>
+      <li><a href="index.html#selectores">Clases, atributo</a> y
+        <a href="index.html#pseudoclases">pseudoclases</a>.........0,0,1,0
+      </li>
+      <li><a href="index.html#selectores">Identificadores</a>..........................0,1,0,0</li>
+      <li>Estilos en linea.........................1,0,0,0</li>
+      <li>!important...............................Rompe la Especificidad</li>
+    </ul>
   </article>
 
   <a href="#head-css">👆</a>
