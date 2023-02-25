@@ -14,7 +14,7 @@ document.write(`Comparacion Estricta (===) Valida si el valor y el tipo de dato 
 //Valida si los dos valores son distintos uno de otro (desigualdad !=)
 document.write(`Desigualdad (!=) Valida si los valores son distintos <b>${numeroAComparar3 != numeroAComparar2}</b> <br>`);
 
-//Compara si es distinto estrictamente (desigualdad estricta !=)
+//Compara si es distinto estrictamente (desigualdad estricta !==)
 document.write(`Desigualdad estricta (!==) Valida si los valores y tipo de dato son distintos <b>${numeroAComparar3 !== numeroAComparar}</b> <br>`);
 
 //Valida si un valor es Mayor que el otro (mayor >)

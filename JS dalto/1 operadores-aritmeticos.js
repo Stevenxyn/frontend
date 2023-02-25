@@ -22,16 +22,16 @@ document.write("RESTO:" + (numero5 %= 6) + "<br>")
 let numero6 = 10;
 document.write("EXPONENCIALIZACION:" + (numero6 **= 4) + "<br>")
 
-//sumar y restar de manera mas rapida
 
+//sumar y restar de manera mas rapida
 let numero7 = 15;
 let numero8 = 5;
 //Antes de mostrarlo se debe realizar la RESTA de lo contrario no sirve
 numero7--
-document.writeln("RESTAR DE A UNO: " + (numero7--)  + "<br>")
+document.writeln("RESTAR DE A UNO: " + (numero7)  + "<br>")
 
 //Antes de mostrarlo se debe realizar la SUMA de lo contrario no sirve
 numero8++
-document.writeln("SUMA DE A UNO: " + (numero8++))
+document.writeln("SUMA DE A UNO: " + (numero8))
 
 
