@@ -1,7 +1,7 @@
 let condicion1 = 45;
 let condicion2 = 50;
 let condicion3 = "50";
-let condicion4 = 18; 
+let condicion4 = 18;
 
 //Creacion de condicionales con (==)
 if (condicion2 == condicion3) {
@@ -30,3 +30,22 @@ if (condicion4 >= 18) {
 } else {
   document.write(`Aun eres menor de edad tienes ${condicion4} años<br>`);
 }
+
+let valorX = "PON ALGUN NOMBRE DE LAS CONDICIONES"
+//validador de nombres
+if (valorX == "steven") {
+  document.write(`Bienvenido ${valorX}`)
+} 
+else if (valorX == "spencer") {
+  document.write(`Bienvenido gato llamado ${valorX}`)
+} 
+else if (valorX == "lorena") {
+  document.write(`Bienvenida ${valorX}`)
+} 
+else if (valorX == "pedro") {
+  document.write(`No eres bienvenido aqui ${valorX}`)
+} 
+else {
+  document.write(`QUIEN ERES!!`)
+}
+
