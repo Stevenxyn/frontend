@@ -125,7 +125,7 @@ pre {
 
 /*Cuando al oprimir un enlace el target es el que se pone en el url este indica que estamos posicionados en dicha parte*/
 #head-css:target{
-  background-color: slateblue;
+  background-color: rgb(120, 203, 241);
   color: white;
   font-weight:bold;
 }
