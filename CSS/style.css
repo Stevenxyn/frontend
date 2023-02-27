@@ -247,5 +247,57 @@ pre {
 }
 
 
+/********************************PRACTICANDO CASCADA Y ESPECIFICIDAD***********************************/
+
+blockquote#cita-seneca.cita-seneca{
+  background-color: yellow;
+  color: black;
+}
+
+/*
+blockquote{
+  background-color: burlywood;
+}
+*/
+
+#cita-seneca{
+  background-color: brown;
+  color: white;
+}
+
+blockquote.cita-seneca{
+  background-color: blue;
+  color: white;
+}
+
+.cita-seneca{
+  background-color: tomato !important;
+  color: rgb(255, 255, 255) !important;
+  /*Cuando hay dos importatn para el mismo estilo si aplica la cascada*/
+  background-color: crimson !important;
+}
+
+.cita-seneca{
+  background-color: aqua;
+}
+
+/*****************************HERENCIA****************************/
+
+.quote-herencia{
+  background-color: blueviolet;
+  font-size: 36px;
+  color: #fff;
+  font-family: Impact;
+}
+
+.quote-herencia cite{
+  /*Para que no me herede el font-size*/
+  font-size: initial;
+  color: initial;
+  /*Que me herede la fuente*/
+  font-family: inherit;
+}
+
+
 
 

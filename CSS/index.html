@@ -23,6 +23,8 @@
         <li><a href="index.html#agrupar-selectores">Agrupar Selectores</a></li>
         <li><a href="index.html#algoritmo-css">El Algoritmo de CSS</a></li>
         <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="index.html#glosario-css">Glosario de CSS</a></li>
       </ul>
     </nav>
   </header>
@@ -305,11 +307,11 @@
     <P><b>El algoritmo de CSS</b> es la forma en que el navegador aplica los estilos al documento HTML. Es vital
       entender este concepto para que entiendas como se aplican y en algunas ocasiones se sobreescriben las reglas CSS
     </P>
-    <ul>
+    <ol>
       <li>La Cascada</li>
       <li>La Especificidad</li>
       <li>La Herencia</li>
-    </ul>
+    </ol>
     <h3>La Cascada</h3>
     <p>Es el mecanismo en el que el navegador aplica los estilos. Y toma en cuenta el siguiente orden:</p>
     <ul>
@@ -325,8 +327,8 @@
     <p>La Especificidad es el peso que tiene un selector cuando hay conflicto de estilos. Se calcula de la siguiente
       forma:</p>
     <ul>
-      <li><a href="index.html#selectores">Etiquetas</a> y
-        <a href="index.html#pseudoelementos">pseudoelementos</a>..............0,0,0,1
+      <li><a href="index.html#selectores">Etiquetas</a> y <a
+          href="index.html#pseudoelementos">pseudoelementos</a>..............0,0,0,1
       </li>
       <li><a href="index.html#selectores">Clases, atributo</a> y
         <a href="index.html#pseudoclases">pseudoclases</a>.........0,0,1,0
@@ -334,6 +336,44 @@
       <li><a href="index.html#selectores">Identificadores</a>..........................0,1,0,0</li>
       <li>Estilos en linea.........................1,0,0,0</li>
       <li>!important...............................Rompe la Especificidad</li>
+    </ul>
+    <h3>La herencia</h3>
+    <p>Es la capacidad de un selector de obtener (Heredar) los valores de sus ancestros mas cercanos, para aplicarla se usa el valor <b>inherit</b>, si queremos evitarla podemos asignar otro vlaor o inicializar la propiedad en cuestion con el valor <b>initial</b></p>
+    <p>Tener en cuenta que no todo se puede heredar por ejemplo los <b>Backgrounds</b></p>
+    <ul>
+      <li><b>initial:</b> Sirve para que no herede y tenga el valor que el navegador establece</li>
+      <li><b>inherit:</b> Sirve para que herede lo de la etiqueta ancestra mas cercana</li>
+    </ul>
+    <blockquote class="quote-herencia">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, adipisci!
+      <cite>Esto es una cita</cite>
+    </blockquote>
+
+
+    <h3>Practicando la cascada y especificidad</h3>
+      <blockquote id="cita-seneca" class="cita-seneca" style="background-color: cadetblue;">
+        Per aspera ad astra, A travez de las dificultades a las estrellas.
+        <cite>Séneca</cite>
+      </blockquote>
+
+  </article>
+  <hr>
+  <article id="glosario-css">
+    <h2>Glosario de CSS</h2>
+    <ul>
+      <li><b></b></li>
+      <li><b></b></li>
+      <li><b></b></li>
+      <li><b></b></li>
+      <li><b></b></li>
+      <li><b></b></li>
+      <li><b></b></li>
+      <li><b></b></li>
+      <li><b></b></li>
+      <li><b></b></li>
+      <li><b></b></li>
+      <li><b></b></li>
+      <li><b></b></li>
     </ul>
   </article>
 
