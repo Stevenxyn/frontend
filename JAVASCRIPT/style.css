@@ -1,0 +1,17 @@
+*{
+  font-family:sans-serif;
+  scroll-behavior: smooth;
+}
+
+h2,
+h1{
+  color: red;
+}
+
+a[href="#head-aprendiendoJS"]{
+  text-decoration: none;
+}
+
+.glosario-items b:first-of-type{
+  color:red;
+}

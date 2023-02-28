@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Fundamentos de JS </title>
+</head>
+
+<body>
+  <header id="head-aprendiendoJS">
+    <h1>Aprendiendo Javascript desde CERO Nivel Junior </h1>
+    <p>En este proyecto mi meta es aprender <b>Javascript</b> con el fin de poder lograr entender las bases de este
+      lenguaje y practicar ejercicios de <b>CODEWARS</b> para mejorar mi logica de programacion, Lo siguiente es
+      realizar proyectos para lograr encontrar un trabajo como <b>Frontend!</b></p>
+    <p>Para tener en cuenta de revisar cada tema del indice</p>
+    <ol>
+      <li>Los nombres de las variables de cada tema se iniciaran con un prefijo para asi no tener conflictos de los
+        archivos JS de cada tema por duplicidad</li>
+      <li>intentare tener aparte los temas que tienen una carga visual respecto a los ejercicios que se traten el la clase, esto para no sobrecargar la pagina principal con alerts, iteracciones desde consola entre otras cosas
+      </li>
+      <li>Revisar si los scripts no estan comentados esto por los anteriores dos puntos</li>
+    </ol>
+    <nav>
+      <li><a href="index.html#1-variables-var-let">1 Variables VAR vs LET</a></li>
+      <li><a href="index.html#2-constantes">2 Constantes CONST</a></li>
+      <li><a href="#operadores-comparacion">3 Operadores de comparacion</a></li>
+      <li><a href="#operadores-logicos">4 Operadores lógicos</a></li>
+      <li><a href="#condicionales">5 Condicionales</a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#glosario">Glosario de JS</a></li>
+    </nav>
+  </header>
+  <hr>
+  <article id="1-variables-var-let">
+    <h2>Variables VAR vs LET <a href="#head-aprendiendoJS">👆</a></h2>
+    <h4>Variables con VAR</h4>
+    <p>Todas las variables con VAR tendran un alcanze global, Si se cambia el valor dentro de un bloque este afectara de
+      manera global y se sobreescribira el valor de la variable globalmente.</p>
+    <h4>Variables con LET</h4>
+    <p>Todas las variables con LET tendran un alcanze por bloques, Si se cambia su valor dentro de un bloque solo se
+      vera afectado dentro del mismo no por fuera.</p>
+    <script src="./tipos_de_datos/1_variables_var_let.js"></script>
+    <p><b>Palabras claves: </b>Scope, alcance global, alcance por bloques</p>
+  </article>
+  <hr>
+  <article id="2-constantes">
+    <h2>Constantes CONST <a href="#head-aprendiendoJS">👆</a></h2>
+    <p>Las constantes NO pueden ser variables que cambien a lo largo del tiempo ya que su escencia es que sea CONSTANTE</p>
+    <p>Los tipos de datos compuestos de Javascript no les aplica lo de const porque se les puede seguir agregando elementos o cambios sin que muestre error </p>
+    <ol>
+      <li>arrays []</li>
+      <li>objetos {}</li>
+      <li>funciones () {}</li>
+      <li>clases {}</li>
+    </ol>
+    <script src="./tipos_de_datos/2_constantes.js"></script>
+    <p><b>Palabras claves: </b>aplica a tipos de datos primitivos, no aplica a tipos de datos compuestos, es inmutable, tiene un scope de bloques</p>
+  </article>
+  <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <article id="operadores-aritmeticos">
+    <h2>1 Operadores Aritmeticos <a href="#head-aprendiendoJS">👆</a></h2>
+    <p>Operaciones matematicas que nos permiten realizar sumas, restas, multiplicacion, division, resto de la division
+      entre otras.</p>
+    <script src="./1 operadores-aritmeticos.js"></script>
+  </article>
+  <hr>
+  <article id="concatenacion">
+    <h2>2 Concatenaciones <a href="#head-aprendiendoJS">👆</a></h2>
+    <p>Nos permite concatenar <i>(Agrupar)</i> Oraciones o operaciones matematicas para mostrar un resultado.</p>
+    <script src="./2 concatenacion.js"></script>
+  </article>
+  <hr>
+  <article id="operadores-comparacion">
+    <h2>3 Operadores de comparacion <a href="#head-aprendiendoJS">👆</a></h2>
+    <p>Nos permite validar valores de distintas variables tales como: si es mayor o menor, si es igual en tipo de dato y
+      valor entre otras.</p>
+    <script src="./3 operadores-comparacion.js"></script>
+  </article>
+  <hr>
+  <article id="operadores-logicos">
+    <h2>4 Operadores Logicos <a href="#head-aprendiendoJS">👆</a></h2>
+    <p>Nos retorna valores booleanos teniendo en cuenta el los tipos de valores que contengan nuestras variables.</p>
+    <script src="./4 operadores-logicos.js"></script>
+  </article>
+  <hr>
+  <article id="operadores-logicos">
+    <h2>5 Condicionales <a href="#head-aprendiendoJS">👆</a></h2>
+    <p>Es una sentencia que nos permite validar algo, ejecuta bloques de codigo y va separando dependiendo su respuesta.
+    </p>
+    <script src="./5 condicionales.js"></script>
+  </article>
+
+
+
+
+
+  <hr>
+  <article id="glosario">
+    <h2>Glosarios de Javascript <a href="#head-aprendiendoJS">👆</a></h2>
+    <ul class="glosario-items">
+      <li><b>var: </b>Declaracion de variable que tiene un alcance Global.</li>
+      <li><b>let: </b>Declaracion de variable que tiene un alcance por bloques.</li>
+      <li><b>const: </b>Declaracion de variable que tiene alcance por bloques y es incapaz de ser modificable.</li>
+      <li><b>scope: </b>Los alcances que tiene cada declaracion de las variables <b>var, let, const.</b></li>
+      <li><b>undefined: </b>Cuando una variable se declara y no se le asigna ningun valor, al ser llamada mostrara
+        <b>undefined.</b>
+      </li>
+      <li><b>null: </b>Cuando intencionalmente declaramos una variable pero esta le asignamos valor null === vacia.</li>
+      <li><b>NaN: </b>Esto sale cuando intentamos hacer operaciones matematicas strings con numeros <b>Not a Number.</b>
+      </li>
+      <li><b></b></li>
+      <li><b></b></li>
+      <li><b></b></li>
+      <li><b></b></li>
+      <li><b></b></li>
+      <li><b></b></li>
+      <li><b></b></li>
+      <li><b></b></li>
+      <li><b></b></li>
+      <li><b></b></li>
+      <li><b></b></li>
+      <li><b></b></li>
+      <li><b></b></li>
+      <li><b></b></li>
+      <li><b></b></li>
+      <li><b></b></li>
+      <li><b></b></li>
+      <li><b></b></li>
+      <li><b></b></li>
+      <li><b></b></li>
+      <li><b></b></li>
+      <li><b></b></li>
+      <li><b></b></li>
+      <li><b></b></li>
+      <li><b></b></li>
+      <li><b></b></li>
+      <li><b></b></li>
+      <li><b></b></li>
+      <li><b></b></li>
+      <li><b></b></li>
+      <li><b></b></li>
+      <li><b></b></li>
+      <li><b></b></li>
+      <li><b></b></li>
+      <li><b></b></li>
+      <li><b></b></li>
+      <li><b></b></li>
+      <li><b></b></li>
+      <li><b></b></li>
+      <li><b></b></li>
+      <li><b></b></li>
+      <li><b></b></li>
+    </ul>
+    <br>
+    <a href="#head-aprendiendoJS">👆</a>
+  </article>
+
+
+
+
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+
+</html>
