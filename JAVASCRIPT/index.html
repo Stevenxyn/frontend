@@ -19,22 +19,22 @@
     <ol>
       <li>Los nombres de las variables de cada tema se iniciaran con un prefijo para asi no tener conflictos de los
         archivos JS de cada tema por duplicidad</li>
-      <li>intentare tener aparte los temas que tienen una carga visual respecto a los ejercicios que se traten el la clase, esto para no sobrecargar la pagina principal con alerts, iteracciones desde consola entre otras cosas
+      <li>intentare tener aparte los temas que tienen una carga visual respecto a los ejercicios que se traten el la
+        clase, esto para no sobrecargar la pagina principal con alerts, iteracciones desde consola entre otras cosas
       </li>
       <li>Revisar si los scripts no estan comentados esto por los anteriores dos puntos</li>
     </ol>
     <nav>
       <li><a href="index.html#1-variables-var-let">1 Variables VAR vs LET</a></li>
       <li><a href="index.html#2-constantes">2 Constantes CONST</a></li>
-      <li><a href="#operadores-comparacion">3 Operadores de comparacion</a></li>
-      <li><a href="#operadores-logicos">4 Operadores lógicos</a></li>
-      <li><a href="#condicionales">5 Condicionales</a></li>
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
+      <li><a href="index.html#3/cadenas-texto">3 Cadenas de texto (Strings)</a></li>
+      <li><a href="index.html#4-numeros">4 Numeros</a></li>
+      <li><a href="index.html#5-booleanos">5 Valores Booleanos</a></li>
+      <li><a href="index.html#6-undefined-null-nan">6 Undefined, null y NaN</a></li>
+      <li><a href="index.html#"></a></li>
+      <li><a href="index.html#"></a></li>
+      <li><a href="index.html#"></a></li>
+      <li><a href="index.html#"></a></li>
       <li><a href="#glosario">Glosario de JS</a></li>
     </nav>
   </header>
@@ -53,8 +53,10 @@
   <hr>
   <article id="2-constantes">
     <h2>Constantes CONST <a href="#head-aprendiendoJS">👆</a></h2>
-    <p>Las constantes NO pueden ser variables que cambien a lo largo del tiempo ya que su escencia es que sea CONSTANTE</p>
-    <p>Los tipos de datos compuestos de Javascript no les aplica lo de const porque se les puede seguir agregando elementos o cambios sin que muestre error </p>
+    <p>Las constantes NO pueden ser variables que cambien a lo largo del tiempo ya que su escencia es que sea CONSTANTE
+    </p>
+    <p>Los tipos de datos compuestos de Javascript no les aplica lo de const porque se les puede seguir agregando
+      elementos o cambios sin que muestre error </p>
     <ol>
       <li>arrays []</li>
       <li>objetos {}</li>
@@ -62,58 +64,49 @@
       <li>clases {}</li>
     </ol>
     <script src="./tipos_de_datos/2_constantes.js"></script>
-    <p><b>Palabras claves: </b>aplica a tipos de datos primitivos, no aplica a tipos de datos compuestos, es inmutable, tiene un scope de bloques</p>
+    <p><b>Palabras claves: </b>aplica a tipos de datos primitivos, no aplica a tipos de datos compuestos, es inmutable,
+      tiene un scope de bloques</p>
   </article>
   <hr>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <article id="operadores-aritmeticos">
-    <h2>1 Operadores Aritmeticos <a href="#head-aprendiendoJS">👆</a></h2>
-    <p>Operaciones matematicas que nos permiten realizar sumas, restas, multiplicacion, division, resto de la division
-      entre otras.</p>
-    <script src="./1 operadores-aritmeticos.js"></script>
+  <article id="3-cadenas-texto">
+    <h2>Cadenas de texto (Strings)</h2>
+    <p>Las cadennas de texto las podemos crear dentro de ("texto"), ('texto'), (`texto`) y cualquiera sera valida eso si
+      no podemos usar las mismas dentro de otra igual ejemplo ("texto "texto 2" ") eso dara error</p>
+    <script src="./tipos_de_datos/3_cadenas_texto.js"></script>
+    <p><b>Palabras claves: </b> concatenacion, template strings, interpolacion de strgins </p>
   </article>
   <hr>
-  <article id="concatenacion">
-    <h2>2 Concatenaciones <a href="#head-aprendiendoJS">👆</a></h2>
-    <p>Nos permite concatenar <i>(Agrupar)</i> Oraciones o operaciones matematicas para mostrar un resultado.</p>
-    <script src="./2 concatenacion.js"></script>
+  <article id="4-numeros">
+    <h2>Numeros</h2>
+    <p>Tipo de dato numerico podemos aplicarle metodos</p>
+    <script src="./tipos_de_datos/4_numeros.js"></script>
+    <p><b>Palabras claves: </b> enteros, decimales, metodos strings</p>
   </article>
   <hr>
-  <article id="operadores-comparacion">
-    <h2>3 Operadores de comparacion <a href="#head-aprendiendoJS">👆</a></h2>
-    <p>Nos permite validar valores de distintas variables tales como: si es mayor o menor, si es igual en tipo de dato y
-      valor entre otras.</p>
-    <script src="./3 operadores-comparacion.js"></script>
+  <article id="5-booleanos">
+    <h2>Valores Booleanos</h2>
+    <p>Constan de True o False</p>
+    <script src="./tipos_de_datos/5_booleanos.js"> </script>
+    <p><b>Palabras Claves:</b> truthy, falsy, 0 falso , 1 verdadero</p>
   </article>
   <hr>
-  <article id="operadores-logicos">
-    <h2>4 Operadores Logicos <a href="#head-aprendiendoJS">👆</a></h2>
-    <p>Nos retorna valores booleanos teniendo en cuenta el los tipos de valores que contengan nuestras variables.</p>
-    <script src="./4 operadores-logicos.js"></script>
+  <article id="6-undefined-null-nan">
+    <h2>Undefined, null y NaN</h2>
+    <script src="./tipos_de_datos/6_undefined_null_nan.js"></script>
+    <p><b>Palabras Claves: </b>variable declarada, inicializar una variable</p>
   </article>
-  <hr>
-  <article id="operadores-logicos">
-    <h2>5 Condicionales <a href="#head-aprendiendoJS">👆</a></h2>
-    <p>Es una sentencia que nos permite validar algo, ejecuta bloques de codigo y va separando dependiendo su respuesta.
-    </p>
-    <script src="./5 condicionales.js"></script>
-  </article>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -127,15 +120,12 @@
       <li><b>let: </b>Declaracion de variable que tiene un alcance por bloques.</li>
       <li><b>const: </b>Declaracion de variable que tiene alcance por bloques y es incapaz de ser modificable.</li>
       <li><b>scope: </b>Los alcances que tiene cada declaracion de las variables <b>var, let, const.</b></li>
-      <li><b>undefined: </b>Cuando una variable se declara y no se le asigna ningun valor, al ser llamada mostrara
-        <b>undefined.</b>
-      </li>
+      <li><b>undefined: </b>Cuando una variable se declara y no se le asigna ningun valor, al ser llamada mostrara <b>undefined.</b></li>
       <li><b>null: </b>Cuando intencionalmente declaramos una variable pero esta le asignamos valor null === vacia.</li>
-      <li><b>NaN: </b>Esto sale cuando intentamos hacer operaciones matematicas strings con numeros <b>Not a Number.</b>
-      </li>
-      <li><b></b></li>
-      <li><b></b></li>
-      <li><b></b></li>
+      <li><b>NaN: </b>Esto sale cuando intentamos hacer operaciones matematicas strings con numeros <b>Not a Number.</b></li>
+      <li><b>Interpolacion de strings: </b> Ingresar variables dentro de un console.log ("texto" + numero + "texto2");</li>
+      <li><b>Concatenacion: </b> Unir strings</li>
+      <li><b>Inmutable: </b> Aquel cuyo contenido no se puede cambiar</li>
       <li><b></b></li>
       <li><b></b></li>
       <li><b></b></li>
