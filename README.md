@@ -2,14 +2,7 @@
 
 
 
-
-
-
-
-
-
-
-## Herramientas
+### Herramientas
 - Revisar soporte y compatibilidad de cada navegador [Can I use](https://caniuse.com/es6)
 
 ### Referencias HTML
@@ -22,6 +15,8 @@
 - Normalizacion de CSS [Normalize.css](https://necolas.github.io/normalize.css/)
 - Guias y ejemplos de CSS [Web.dev CSS](https://web.dev/learn/css/)
 - Para parsear codigo CSS a distintos prefijos de navegadores [Autoprefixer CSS](https://autoprefixer.github.io/)
+- Reseteo desde donde se empieza a contar border y paddings de las cajas 
+[Paul Irish](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
 
 
 > 09/02/23

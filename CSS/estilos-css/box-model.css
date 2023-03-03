@@ -1,0 +1,153 @@
+* {
+  scroll-behavior: smooth;
+}
+
+.prueba-modelo-caja {
+  background-color: blueviolet;
+  color: white;
+  font-size: 20px;
+  /*Margin lo que esta por fuera de la caja*/
+  margin: 20px;
+  /*Border el borde de la caja*/
+  border: 10px solid salmon;
+  /*Padding distancia del borde de la caja al contenido */
+  padding: 50px;
+  text-align: center;
+}
+
+.practica-caja-uno {
+  border: 3px solid red;
+  border-radius: 5px;
+  border-style: dashed;
+  width: 250px;
+  height: 150px;
+  /*Sintetizo y hago una aplicacion mas limpia y sensilla*/
+  border: 5px dashed salmon;
+}
+
+/*******************************PRACTICA MARGIN Y PADDING*************************************/
+.caja-uno,
+.caja-dos {
+  background-color: cornflowerblue;
+  margin: 50px;
+  padding: 20px;
+  border: 3px dashed salmon;
+  /*Forma mas exacta de aplicar margin y padding*/
+  /*Primer valor top y bottom segundo valor left y right*/
+  margin: 10px 40px;
+  padding: 50px 50px 50px 50px;
+}
+
+.caja-uno {
+  margin-right: 400px;
+}
+
+.caja-dos {
+  margin-top: 50px;
+  margin-left: 400px;
+}
+
+/*******************************CAJAS EN LINEA VS CAJAS EN BLOQUE****************************************/
+
+.caja-bloque,
+.caja-linea {
+  background-color: darkcyan;
+  /*La caja en linea no tiene dimensiones laterales*/
+  width: 500px;
+  /*La caja en linea no tiene dimensiones de altura*/
+  height: 250px;
+  border: 3px solid red;
+  color: white;
+}
+
+/*Los elementos en linea solo leen posiciones en horizontal nunca en vertical*/
+.caja-linea {
+  padding: 50px;
+  margin: 50px;
+}
+
+/**/
+.caja-bloque {
+  height: 150px;
+  width: 150px;
+  margin: 52px;
+}
+
+/*******************************PROPIEDAD DISPLAY******************************************************/
+
+.caja-de-bloque,
+.caja-de-linea,
+.caja-de-prueba1,
+.caja-de-prueba2,
+.caja-de-prueba3{
+background-color: coral;
+  color: white;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+.caja-de-bloque{
+  /*Cambiando su naturalidad a en linea*/
+  display: inline;
+}
+
+.caja-de-linea{
+  /*Cambiando su naturalidad a bloque con propiedades de linea*/
+ display: inline-block;
+ width: 200px;
+ height: 250px;
+}
+
+.caja-de-prueba1{
+  /*Ocultando la caja pero aun existe y consume recursos*/
+  display:none;
+  height: 200px;
+  width: 250px;
+}
+
+/*Escondemos el la visibilidad del elemento pero no su estado en si*/
+.caja-de-prueba2{
+  visibility: hidden;
+}
+
+.caja-de-prueba3{
+  visibility: visible;
+}
+
+
+/*********************************************PROPIEDAD OVERFLOW******************************************************/
+
+.caja-overflow{
+  background-color: burlywood;
+  width: 150px;
+  height: 150px;
+  overflow: auto;
+  display: inline-block;
+}
+
+.caja-overflow-dos{
+  background-color: aqua;
+  overflow: auto;
+  width: 200px;
+  height: 150px;
+  display: inline-block;
+}
+
+/*********************************************TAMAÑO CAJA*****************************************************/
+
+.box-sizing-contend{
+  background-color: cyan;
+  width:600px;
+  height: 200px;
+}
+
+.box-sizing-contend > *{
+  border: 1px solid black;
+  /*son 3 cajas entonces 3x2 = 60 y 600 tenemos en ancho del container dividimos la anchura en cada elemento para que asi quepan
+  */
+  width: 200px;
+  float: left;
+  box-sizing: border-box;
+  padding: 5px;
+  text-align: center;
+}

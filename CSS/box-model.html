@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./estilos-css/normalize.css">
+  <link rel="stylesheet" href="./estilos-css/box-model.css">
+  <title>Modelo de caja CSS</title>
+</head>
+
+<body>
+  <header id="head-css-box-model">
+    <h1 style="background-color: aqua;">Modelo de Caja en CSS <a href="index.html#head-css">🏠</a></h1>
+    <nav>
+      <ul>
+        <li><a href="box-model.html#introduccion-modelo-caja">Introduccion al modelo de caja CSS</a></li>
+        <li><a href="box-model.html#practica-margin-y-padding">Practica margin y padding CSS</a></li>
+        <li><a href="box-model.html#tipos-de-caja">Cajas de linea VS Cajas en bloque</a></li>
+        <li><a href="box-model.html#propiedad-display">Propiedad Display</a></li>
+        <li><a href="box-model.html#propiedad-overflow">Propiedad Overflow</a></li>
+        <li><a href="box-model.html#tamanos-cajas">Tamaño de caja</a></li>
+        <li><a href="box-model.html#"></a></li>
+      </ul>
+    </nav>
+  </header>
+  <hr>
+  <article id="introduccion-modelo-caja">
+    <h2>Introduccion al modelo de caja <a href="#head-css-box-model">👆</a></h2>
+    <p><b>El modelo de caja</b> Es la forma en que CSS ve a los elementos HTML, Los ve como si fueran cajas todos y cada
+      uno los ve con las siguientes propiedades</p>
+    <ol>
+      <li><b>El contenido: </b>El contenido que tiene el elemento HTML, tomando en cuenta sus dimensiones <b>(width &
+          height)</b></li>
+      <li><b>El padding: </b>El espaciado interno del contenido hacia el borde</li>
+      <li><b>El border: </b>El borde que delimita el elemento HTML</li>
+      <li><b>El margin: </b>Las distancias externas que tiene la caja hacia otros elementos</li>
+    </ol>
+    <p>Las cajas como lo entiende el modelo de caja tienen 4 lados y estos se leeran como las manecillas del reloj: </p>
+    <ol>
+      <li><b>Arriba: </b>top</li>
+      <li><b>Derecha: </b>right</li>
+      <li><b>Abajo: </b>bottom</li>
+      <li><b>Izquierda: </b>left</li>
+    </ol>
+
+    <p class="prueba-modelo-caja">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptas possimus
+      iure ad optio dolores magni, delectus consequuntur at quae sapiente ex aspernatur exercitationem maiores labore
+      ipsum, minus aliquid. Maxime.</p>
+
+    <p class="practica-caja-uno">Revisa los estilos de border en la misma hoja de CSS </p>
+
+  </article>
+  <hr>
+  <article id="practica-margin-y-padding">
+    <h2>Practicando Margin y padding <a href="#head-css-box-model">👆</a></h2>
+    <p>Podemos aplicar tanto margin como padding de varias formas</p>
+    <ul>
+      <li><b>1 Valor: </b>Aplica estilo a los 4 lados de la caja</li>
+      <li><b>2 Valores: </b>Primer valor es para los laterales, segundo valor para horizontales</li>
+      <li><b>3 Valores: </b>Primer valor para top, segundo para los laterales, tercero para bottom</li>
+      <li><b>4 Valores: </b> Primer valor top, segundo left, tercero bottom, cuarto right</li>
+    </ul>
+    <pre>
+      1valor{
+        margin:50px;
+      }
+      
+      2valor{
+        margin: 50px 50px;
+      }
+
+      3valor{
+        margin:50px 50px 50px;
+      }
+      
+      4valor{
+        margin: 50px 50px 50px 50px;
+      }
+    </pre>
+    <div class="caja-uno">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate maxime, hic eos aperiam
+      amet
+      excepturi cumque, neque aliquid ut libero quidem obcaecati quas? Aspernatur, nostrum! Totam, temporibus quibusdam.
+      Eligendi, voluptate!</div>
+    <div class="caja-dos">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, repudiandae dolorem. Quo,
+      fugiat officia ad libero, ea molestiae obcaecati reprehenderit corporis similique reiciendis molestias qui.
+      Voluptatum corrupti aliquid ullam eos.</div>
+  </article>
+  <hr>
+  <article id="tipos-de-caja">
+    <h2>Cajas de linea VS Cajas en bloque <a href="#head-css-box-model">👆</a></h2>
+    <h3>Caja de linea</h3>
+    <ul>
+      <li>ocupan el espacio necesario para mostrar su contenido</li>
+      <li>No tienen dimensiones modificables (alto, ancho)</li>
+      <li>Permiten otros elementos a su lado</li>
+      <li>Padding y margin solo empujan a elementos adyacentes en horizontal (NUCA EN vetical)</li>
+    </ul>
+    <h3>Caja de Bloque</h3>
+    <ul>
+      <li>Ocupan todo el ancho disponible</li>
+      <li>tienen dimensiones modificables (alto, ancho)</li>
+      <li>No permiten que otros elementos a su lado</li>
+    </ul>
+
+    <span class="caja-linea">Esto es una caja en linea</span>
+    <span>Esto es un span.</span>
+    <div class="caja-bloque"> Esto es una caja en bloque</div>
+  </article>
+  <hr>
+  <article id="propiedad-display">
+    <h2>Propiedad Display <a href="#head-css-box-model">👆</a></h2>
+    <p>Esta propiedad funciona para transformar el display de los elementos que creemos o invertirlos</p>
+    <ol>
+      <li>inline</li>
+      <li>block</li>
+      <li>inline-block</li>
+      <li>none</li>
+      <li>flex</li>
+      <li>grid</li>
+    </ol>
+    <p><b>visibility</b> COn esa propiedad tambien escondemos elementos del html al igual que con display none pero a
+      diferencia esque este mantiene el espacio que se ocupaba anteriormente.</p>
+    <div class="caja-de-bloque">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore obcaecati dolor ullam a quam nihil facilis,
+      voluptas, nobis deleniti consequatur eveniet esse placeat accusamus dignissimos doloribus tempore. Quo, expedita
+      quos.
+    </div>
+    <span class="caja-de-linea">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dolorum eaque distinctio ut facilis saepe expedita,
+      optio, enim maiores tenetur labore reiciendis esse sunt explicabo ab quis iste est voluptates.
+    </span>
+    <div class="caja-de-prueba1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam iusto fuga omnis alias a aperiam aliquid commodi
+      excepturi qui, magnam facere amet nostrum quibusdam quidem unde ducimus fugiat numquam distinctio.
+    </div>
+    <div class="caja-de-prueba2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam iusto fuga omnis alias a aperiam aliquid commodi
+      excepturi qui, magnam facere amet nostrum quibusdam quidem unde ducimus fugiat numquam distinctio.
+    </div>
+    <div class="caja-de-prueba3">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam iusto fuga omnis alias a aperiam aliquid commodi
+      excepturi qui, magnam facere amet nostrum quibusdam quidem unde ducimus fugiat numquam distinctio.
+    </div>
+  </article>
+  <hr>
+  <article id="propiedad-overflow">
+    <h2>Propiedad Overflow <a href="#head-css-box-model">👆</a></h2>
+    <p>Esta propiedad sirve para definir el desbordamiento del contenido en una caja para que no se salga de dicha caja
+      rompiendo todo</p>
+    <div class="caja-overflow">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi non error laboriosam nemo tenetur iure voluptatum
+      doloremque ratione expedita rerum incidunt nihil quidem fugit sint repudiandae consequuntur facere quisquam
+      aliquam placeat repellendus nisi quasi, inventore numquam sed. Unde ullam tenetur atque minus, consequuntur
+      voluptatum sunt ipsum error autem reprehenderit ipsam.
+    </div>
+    <div class="caja-overflow-dos">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi non error laboriosam nemo tenetur iure voluptatum
+      doloremque ratione expedita rerum incidunt nihil quidem fugit sint repudiandae consequuntur facere quisquam
+      aliquam placeat repellendus nisi quasi, inventore numquam sed. Unde ullam tenetur atque minus, consequuntur
+      voluptatum sunt ipsum error autem reprehenderit ipsam.
+    </div>
+  </article>
+  <hr>
+  <article id="tamanos-cajas">
+    <h2>Tamaños de cajas</h2>
+    <p>Recomendacion siempre poner al inicio de cada css este reseteo </p>
+    <div class="box-sizing-contend">
+      <div class="cajas-x">Primera fila</div>
+      <div class="cajas-x">Segunda fila</div>
+      <div class="cajas-x">Tercera fila</div>
+    </div>
+  </article>
+
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+
+</html>
