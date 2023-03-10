@@ -68,3 +68,5 @@ function piedraPapelTijeraJuego(p1, p2) {
 }
 
 console.log(piedraPapelTijeraJuego("piedra","papel"));
+
+console.log(3**100);
