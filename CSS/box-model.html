@@ -21,6 +21,11 @@
         <li><a href="box-model.html#propiedad-display">Propiedad Display</a></li>
         <li><a href="box-model.html#propiedad-overflow">Propiedad Overflow</a></li>
         <li><a href="box-model.html#tamanos-cajas">Tamaño de caja</a></li>
+        <li><a href="box-model.html#propiedad-float">Propiedades float y clear</a></li>
+        <li><a href="box-model.html#colapso-margenes-verticales">Colaps dee imagenes verticales</a></li>
+        <li><a href="box-model.html#centrar-cajas">Centrar cajas en CSS</a></li>
+        <li><a href="box-model.html#"></a></li>
+        <li><a href="box-model.html#"></a></li>
         <li><a href="box-model.html#"></a></li>
       </ul>
     </nav>
@@ -164,7 +169,7 @@
   </article>
   <hr>
   <article id="tamanos-cajas">
-    <h2>Tamaños de cajas</h2>
+    <h2>Tamaños de cajas <a href="#head-css-box-model">👆</a></h2>
     <p>Recomendacion siempre poner al inicio de cada css este reseteo </p>
     <div class="box-sizing-contend">
       <div class="cajas-x">Primera fila</div>
@@ -172,7 +177,35 @@
       <div class="cajas-x">Tercera fila</div>
     </div>
   </article>
-
+  <hr>
+  <article id="propiedad-float">
+    <h2>Propiedades float y clear <a href="#head-css-box-model">👆</a></h2>
+    <p>Ubica un elemento al lado izquierdo o derecho de su contenedor, permitiendo a los elementos de texto y en linea aparecer a su costado <b>Procurar no usar los floats</b></p>
+    <div class="container-floats">
+      <p class="float-right">Este elemento flota a la derecha</p>
+      <p class="float-left">Este elemento flota a la izquierda</p>
+      <p class="clear-fix">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, mollitia quibusdam minus dolore exercitationem voluptatum ullam, architecto eum dolores voluptates, ut molestiae repudiandae. Minima dolor neque veritatis earum officiis temporibus?</p>
+    </div>
+  </article>
+  <hr>
+  <article id="colapso-margenes-verticales">
+    <h2>Colapso de margenes verticales  <a href="#head-css-box-model">👆</a></h2>
+    <p>Al ocupar margin top o margin bottom solo usar una ya que estos si se aplican ambos de forma vertical no se aplicara correctamente por ejemplo en el siguiente se aplico 16px de top pero la seccion 2 no los aplica y se aplico 16px en bottom pero la seccion 1 no los aplica</p>
+    <article class="margin-collage">
+      <section>Seccion 1</section>
+      <section>Seccion 2</section>
+    </article>
+  </article>
+  <hr>
+  <article id="centrar-cajas">
+    <h2>Centrar cajas en CSS</h2>
+    <p>De esta manera centramos contenidos de nuestra pagina web tal como las paginas web modernas bien pro</p>
+    <article class="pagina-web">
+      <header>Cabezera</header>
+      <main>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, enim molestias commodi eius sequi nihil suscipit doloribus asperiores odio maxime quaerat obcaecati distinctio eveniet facere sed, a placeat blanditiis delectus.</main>
+      <footer>Pie de pagina</footer>
+    </article>
+  </article>
 
   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>

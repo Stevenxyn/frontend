@@ -151,3 +151,64 @@ background-color: coral;
   padding: 5px;
   text-align: center;
 }
+
+/*********************************************PROPIEDADES FLOAT*****************************************************/
+
+.container-floats{
+  background-color: aquamarine;
+}
+
+.float-left{
+  float: left;
+}
+
+.float-right{
+  float: right;
+}
+
+/*Esto sirve para limpiar los espacios que deja la propiedad float al moverlos a left o right*/
+.clear-fix{
+ clear: both;
+}
+
+
+/*********************************************COLAPSO DE MARGENES VERTICALES*****************************************************/
+
+.margin-collage{
+  background-color: brown;
+}
+
+.margin-collage section{
+  color: white;
+  border: 3px solid blue;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+
+/*********************************************COMO CENTRAR CAJAS EN CSS*****************************************************/
+.pagina-web{
+  background-color: black;
+  color: white;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+  /*width ancho  height alto*/
+  width: 800px;
+  height: 1000px;
+  padding: 50px;
+  /*Centrar la caja esta es la mejor forma*/
+  margin-left: auto;
+  margin-right: auto;
+  /*De esta manera tambien funciona pero OJO como ponemos 0 en top y bottom reseteamos valores ya existentes*/
+  margin: 0 auto;
+}
+
+.pagina-web header{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.pagina-web main{
+ height: 800px;
+}
+
+
